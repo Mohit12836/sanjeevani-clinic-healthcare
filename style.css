@@ -1736,9 +1736,9 @@ footer.main-footer,
     grid-template-columns: 1fr 1fr;
   }
 }
-}
 
 @media (max-width: 520px) {
+  .footer-content-grid,
   .footer-container {
     grid-template-columns: 1fr;
   }
@@ -1897,6 +1897,14 @@ footer.main-footer,
   color: #fbbf24;
   font-weight: 800;
   letter-spacing: 0.02em;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.creator-name:hover {
+  color: #fde047;
 }
 
 .creator-phone {
