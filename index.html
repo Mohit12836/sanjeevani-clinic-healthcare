@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Sanjeevani Clinic & Healthcare - Dr. Mohit Sharma (MBBS, MD) | Jaora</title>
+  <meta name="description" content="Sanjeevani Clinic & Healthcare - Dr. Mohit Sharma (MBBS, MD Medicine). General Physician, Child Care, Heart & BP, Diabetes, ECG, Pathology Lab & Pharmacy in Jaora, Ratlam.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Main Navigation Bar (Permanently Fixed at Top: 0 with Golden/Cyan Line) -->
+  <nav class="main-nav" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" onclick="event.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'});">
+        <div class="logo-icon-box" style="background: linear-gradient(135deg, #0284c7, #0f766e);">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M12 2v20M2 12h20"/>
+          </svg>
+          <span class="logo-badge-b" style="font-size: 1.3rem;">+</span>
+        </div>
+        <div class="logo-text-group">
+          <span class="brand-title" style="color: #0284c7;">Sanjeevani</span>
+          <span class="brand-subtitle" style="color: #0f766e;">Clinic &amp; Healthcare Center</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <div class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#services" class="nav-link">Medical Treatments</a>
+        <a href="#facilities" class="nav-link">Lab &amp; Facilities</a>
+        <a href="#about" class="nav-link">About Doctor</a>
+        <a href="#contact" class="nav-link">Book Appointment</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/919876543210?text=Namaste%20Doctor%20Sahab,%20mujhe%20consultation%20appointment%20book%20karna%20hai." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-pill">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+          </svg>
+          <span>Book Appointment</span>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="drawer-header">
+        <div class="logo-text-group">
+          <span class="brand-title" style="color: #0284c7;">Sanjeevani</span>
+          <span class="brand-subtitle" style="color: #0f766e;">Clinic &amp; Healthcare Center</span>
+        </div>
+        <button class="drawer-close" id="drawerCloseBtn">&times;</button>
+      </div>
+      <div class="drawer-links">
+        <a href="#home" class="drawer-link active">Home</a>
+        <a href="#services" class="drawer-link">Medical Treatments</a>
+        <a href="#facilities" class="drawer-link">Lab &amp; Facilities</a>
+        <a href="#about" class="drawer-link">About Doctor</a>
+        <a href="#contact" class="drawer-link">Book Appointment</a>
+      </div>
+      <div class="drawer-footer">
+        <a href="tel:+919876543210" class="btn btn-outline-call">
+          📞 Emergency Call: +91 98765 43210
+        </a>
+        <a href="https://wa.me/919876543210" class="btn btn-whatsapp-full">
+          💬 WhatsApp Consultation
+        </a>
+      </div>
+    </div>
+
+    <!-- Waving Glowing Golden Line at Bottom of Navbar -->
+    <div class="nav-golden-line"></div>
+  </nav>
+
+  <!-- Hero Section -->
+  <main id="home" class="hero-section">
+    <div class="container hero-container">
+      <div class="hero-text-col">
+        <!-- Doctor Specialization Badge -->
+        <div class="owner-pill-badge" style="background: #e0f2fe; color: #0369a1; border-color: #bae6fd;">
+          <span class="badge-dot" style="background: #0284c7; box-shadow: 0 0 8px #0284c7;"></span>
+          <span><strong>Dr. Mohit Sharma</strong> • MBBS, MD (Senior Physician)</span>
+        </div>
+
+        <h1 class="hero-heading">
+          Aapke Swasthya ki Dekhbhal, <span style="color: #0284c7;">Vishwasi Ilaj</span> aur <span style="color: #0f766e;">Uchit Paramarsh</span>
+        </h1>
+
+        <p class="hero-subtext">
+          24/7 aapatkaleen chikitsa, samanya rog, madhumeh (diabetes), hriday rog paramarsh, shishu rog, lab test aur sampoorn swasthya suvidha ek hi chhat ke neeche!
+        </p>
+
+        <!-- Fast Trust Badges -->
+        <div class="trust-pills-row">
+          <div class="trust-tag">
+            <span class="tag-icon green-bg">✓</span>
+            <span>15+ Yrs Experience</span>
+          </div>
+          <div class="trust-tag">
+            <span class="tag-icon blue-bg">🏥</span>
+            <span>Modern Clinic Setup</span>
+          </div>
+          <div class="trust-tag">
+            <span class="tag-icon orange-bg">⭐</span>
+            <span>10,000+ Happy Patients</span>
+          </div>
+        </div>
+
+        <!-- Quick Action CTA Buttons -->
+        <div class="hero-cta-group">
+          <a href="#contact" class="btn btn-primary-blue">
+            <span>Book Appointment Online</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="#services" class="btn btn-outline-orange">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>Check Treatments</span>
+          </a>
+          <a href="https://wa.me/919876543210" target="_blank" class="btn btn-whatsapp-action">
+            <span>Direct WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Visual Photo Card with Doctor & Live Status -->
+      <div class="hero-visual-col">
+        <div class="shop-hero-card photo-card-frame">
+          <!-- Card Header Banner -->
+          <div class="card-banner-top" style="background: linear-gradient(135deg, #0284c7, #0369a1);">
+            <div class="card-brand">
+              <span class="card-brand-title">Sanjeevani Healthcare Center</span>
+              <span class="card-owner">Chief Consultant: Dr. Mohit Sharma (MD)</span>
+            </div>
+            <div class="live-status-badge">
+              <span class="pulse-dot"></span> CLINIC OPEN
+            </div>
+          </div>
+
+          <!-- Real Doctor Photo -->
+          <div class="hero-photo-wrapper">
+            <img src="assets/doctor_hero.jpg" alt="Dr. Mohit Sharma - Senior Physician" class="hero-main-photo" loading="eager">
+            <div class="photo-overlay-badges">
+              <span class="overlay-tag-slogan">"रोगी सेवा ही हमारा प्रथम संकल्प"</span>
+            </div>
+          </div>
+
+          <!-- Bottom Card Footer Note -->
+          <div class="card-footer-banner">
+            <span>📍 Main Road, Near Bus Stand, Jaora (Ratlam) • Emergency 24x7</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Quick Filter & Live Search Bar -->
+  <section class="search-filter-section">
+    <div class="container">
+      <div class="search-box-wrap">
+        <div class="search-input-group">
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="liveSearchInput" placeholder="Aapko kis rog ya suvidha ke baare me jankari chahiye? (e.g. Fever, BP, Sugar, ECG, Child, Lab...)" autocomplete="off">
+          <button id="clearSearchBtn" class="clear-search-btn" title="Clear Search">&times;</button>
+        </div>
+        <div class="filter-pills" id="filterPillsContainer">
+          <button class="pill-btn active" data-filter="all">All Services</button>
+          <button class="pill-btn" data-filter="general">General Medicine</button>
+          <button class="pill-btn" data-filter="special">Specialist Care</button>
+          <button class="pill-btn" data-filter="lab">Lab &amp; Diagnostic</button>
+          <button class="pill-btn" data-filter="emergency">Emergency 24x7</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 1: MEDICAL TREATMENTS & SERVICES (8 Auto-Fit Responsive Blocks with Cropped Stock Photos) -->
+  <section id="services" class="section-services">
+    <div class="container">
+      <div class="section-title-wrap text-center">
+        <div class="title-accent-badge">
+          <span class="dash-line" style="background: #0284c7;"></span>
+          <h2 class="section-main-title">Medical Treatments &amp; Services</h2>
+          <span class="dash-line" style="background: #0284c7;"></span>
+        </div>
+        <p class="section-subtitle">Comprehensive Healthcare Solutions for Your Entire Family</p>
+      </div>
+
+      <!-- 8 Compact Auto-Responsive Blocks (Grid Auto-Fit) -->
+      <div class="services-grid" id="servicesGrid">
+        
+        <!-- 1. General Physician & Consultation -->
+        <div class="service-card block-hover" data-category="general service" data-title="General Physician Fever Viral Infection Cough Cold" onclick="openServiceModal('General Physician & Consultation', 'Treatment for viral fever, infections, cough, cold, allergies, and daily health consultation', 'assets/service_general.jpg')">
+          <div class="service-icon-wrap icon-bg-blue">
+            <img src="assets/service_general.jpg" alt="General Physician" class="service-logo-img" style="border-radius: 50%; width: 44px; height: 44px; object-fit: cover;" loading="lazy">
+          </div>
+          <h3 class="card-title">General Medicine</h3>
+          <span class="service-badge">Fever / Infection</span>
+        </div>
+
+        <!-- 2. Child Care & Pediatrician -->
+        <div class="service-card block-hover" data-category="special service" data-title="Child Care Pediatric Vaccination Newborn Shishu Rog" onclick="openServiceModal('Child Care & Pediatrics', 'Complete healthcare for newborns, infants, children, vaccination schedules and growth monitoring', 'assets/service_pediatric.jpg')">
+          <div class="service-icon-wrap icon-bg-green">
+            <img src="assets/service_pediatric.jpg" alt="Child Care" class="service-logo-img" style="border-radius: 50%; width: 44px; height: 44px; object-fit: cover;" loading="lazy">
+          </div>
+          <h3 class="card-title">Child Healthcare</h3>
+          <span class="service-badge">Newborn &amp; Kids</span>
+        </div>
+
+        <!-- 3. Heart & Blood Pressure (Cardio) -->
+        <div class="service-card block-hover" data-category="special service" data-title="Heart Blood Pressure BP Hypertension Cardio" onclick="openServiceModal('Heart & Blood Pressure Care', 'Hypertension management, heart checkup, lifestyle guidance and regular monitoring', 'assets/service_cardio.jpg')">
+          <div class="service-icon-wrap icon-bg-red">
+            <img src="assets/service_cardio.jpg" alt="Heart & BP" class="service-logo-img" style="border-radius: 50%; width: 44px; height: 44px; object-fit: cover;" loading="lazy">
+          </div>
+          <h3 class="card-title">Heart &amp; BP Care</h3>
+          <span class="service-badge">Hypertension / Heart</span>
+        </div>
+
+        <!-- 4. Diabetes & Thyroid Management -->
+        <div class="service-card block-hover" data-category="special service" data-title="Diabetes Sugar Thyroid Hormone Management" onclick="openServiceModal('Diabetes & Thyroid Management', 'Accurate blood sugar monitoring, HbA1c guidance, thyroid profile & customized diet plans', 'assets/service_diabetes.jpg')">
+          <div class="service-icon-wrap icon-bg-yellow">
+            <img src="assets/service_diabetes.jpg" alt="Diabetes Care" class="service-logo-img" style="border-radius: 50%; width: 44px; height: 44px; object-fit: cover;" loading="lazy">
+          </div>
+          <h3 class="card-title">Diabetes &amp; Sugar</h3>
+          <span class="service-badge">HbA1c / Diet Plan</span>
+        </div>
+
+        <!-- 5. Advanced Pathology Lab -->
+        <div class="service-card block-hover" data-category="lab service" data-title="Pathology Lab Blood Test CBC Lipid Urine" onclick="openServiceModal('Pathology & Diagnostic Lab', 'Fast and precise blood tests: CBC, Lipid profile, Liver function, Kidney function & Urine test with digital reports', 'assets/service_lab.jpg')">
+          <div class="service-icon-wrap icon-bg-purple">
+            <img src="assets/service_lab.jpg" alt="Pathology Lab" class="service-logo-img" style="border-radius: 50%; width: 44px; height: 44px; object-fit: cover;" loading="lazy">
+          </div>
+          <h3 class="card-title">Pathology Lab</h3>
+          <span class="service-badge">Fast Blood Tests</span>
+        </div>
+
+        <!-- 6. Digital ECG & Monitoring -->
+        <div class="service-card block-hover" data-category="lab service" data-title="Digital ECG Heart Rate Pulse Monitoring" onclick="openServiceModal('12-Lead Digital ECG', 'Instant 12-lead digital ECG recording with immediate doctor analysis for chest discomfort or palpitations', 'assets/service_ecg.jpg')">
+          <div class="service-icon-wrap icon-bg-pink">
+            <img src="assets/service_ecg.jpg" alt="Digital ECG" class="service-logo-img" style="border-radius: 50%; width: 44px; height: 44px; object-fit: cover;" loading="lazy">
+          </div>
+          <h3 class="card-title">Digital 12-Lead ECG</h3>
+          <span class="service-badge">Instant Report</span>
+        </div>
+
+        <!-- 7. Emergency & Day Care (24x7) -->
+        <div class="service-card block-hover" data-category="emergency service" data-title="Emergency 24x7 Day Care First Aid Oxygen IV Drip" onclick="openServiceModal('24x7 Emergency & Day Care', 'Emergency first-aid, wound dressing, IV drip fluids, nebulization and oxygen support', 'assets/service_emergency.jpg')">
+          <div class="service-icon-wrap icon-bg-red">
+            <img src="assets/service_emergency.jpg" alt="Emergency Care" class="service-logo-img" style="border-radius: 50%; width: 44px; height: 44px; object-fit: cover;" loading="lazy">
+          </div>
+          <h3 class="card-title">Emergency &amp; IV Drip</h3>
+          <span class="service-badge">24x7 Urgent Care</span>
+        </div>
+
+        <!-- 8. In-House Medical Pharmacy -->
+        <div class="service-card block-hover" data-category="general service" data-title="Pharmacy Medicine Chemist Dawa Medical Store" onclick="openServiceModal('In-House Pharmacy & Chemist', '100% genuine prescribed medicines, injections, surgical items and daily healthcare supplies', 'assets/service_pharmacy.jpg')">
+          <div class="service-icon-wrap icon-bg-green">
+            <img src="assets/service_pharmacy.jpg" alt="Pharmacy" class="service-logo-img" style="border-radius: 50%; width: 44px; height: 44px; object-fit: cover;" loading="lazy">
+          </div>
+          <h3 class="card-title">In-House Pharmacy</h3>
+          <span class="service-badge">100% Genuine Meds</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: CLINIC FACILITIES & LAB PACKAGES -->
+  <section id="facilities" class="section-kirana" style="background: #f8fafc;">
+    <div class="container">
+      <div class="section-title-wrap text-center">
+        <div class="title-accent-badge">
+          <span class="dash-line orange-line" style="background: #0f766e;"></span>
+          <h2 class="section-main-title">Preventive <span style="color: #0284c7;">Health Checkup Packages</span></h2>
+          <span class="dash-line orange-line" style="background: #0f766e;"></span>
+        </div>
+        <p class="section-subtitle">Affordable Full-Body Wellness Profiles for Healthy Living</p>
+      </div>
+
+      <!-- 4 Wellness Packages -->
+      <div class="products-grid">
+        
+        <div class="product-card block-hover" onclick="openServiceModal('Basic Health Checkup Package', 'Complete Blood Count (CBC), Blood Sugar Fasting, Blood Pressure & Doctor Consultation', 'assets/service_lab.jpg')">
+          <div class="product-img-box">
+            <img src="assets/service_lab.jpg" alt="Basic Health Checkup" class="product-photo" loading="lazy">
+            <span class="product-badge-sale" style="background: #0284c7;">Popular</span>
+          </div>
+          <div class="product-info-wrap">
+            <h3 class="card-title">Basic Health Profile</h3>
+            <p class="product-desc">CBC + Blood Sugar + BP + Physical Doctor Exam</p>
+            <div class="product-price-row">
+              <span class="product-price" style="color: #0284c7;">₹499/-</span>
+              <button class="btn btn-product-action" style="background: #0284c7;">Book Test</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card block-hover" onclick="openServiceModal('Senior Citizen Heart & Diabetic Profile', 'Lipid Profile, HbA1c, 12-Lead ECG, Kidney Function (KFT), Liver Function (LFT) & Full Consultation', 'assets/service_cardio.jpg')">
+          <div class="product-img-box">
+            <img src="assets/service_cardio.jpg" alt="Senior Citizen Profile" class="product-photo" loading="lazy">
+            <span class="product-badge-sale" style="background: #0f766e;">Recommended</span>
+          </div>
+          <div class="product-info-wrap">
+            <h3 class="card-title">Heart &amp; Diabetic Check</h3>
+            <p class="product-desc">Lipid + HbA1c + Digital ECG + Kidney Profile</p>
+            <div class="product-price-row">
+              <span class="product-price" style="color: #0f766e;">₹1,199/-</span>
+              <button class="btn btn-product-action" style="background: #0f766e;">Book Test</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card block-hover" onclick="openServiceModal('Child & Infant Immunity Check', 'Growth assessment, Nutritional evaluation, Pediatric vaccination check & Consultation', 'assets/service_pediatric.jpg')">
+          <div class="product-img-box">
+            <img src="assets/service_pediatric.jpg" alt="Child Health Package" class="product-photo" loading="lazy">
+            <span class="product-badge-sale" style="background: #ea580c;">Kids Care</span>
+          </div>
+          <div class="product-info-wrap">
+            <h3 class="card-title">Child Immunity Profile</h3>
+            <p class="product-desc">Growth milestone, Pediatric exam &amp; Vaccine chart</p>
+            <div class="product-price-row">
+              <span class="product-price" style="color: #ea580c;">₹399/-</span>
+              <button class="btn btn-product-action" style="background: #ea580c;">Book Test</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card block-hover" onclick="openServiceModal('Executive Full Body Comprehensive Checkup', 'Comprehensive 64 Parameters: CBC, LFT, KFT, Thyroid Profile, Lipid, Urine R/M & Doctor Consultation', 'assets/clinic_front.jpg')">
+          <div class="product-img-box">
+            <img src="assets/clinic_front.jpg" alt="Full Body Health Profile" class="product-photo" loading="lazy">
+            <span class="product-badge-sale" style="background: #dc2626;">Complete Care</span>
+          </div>
+          <div class="product-info-wrap">
+            <h3 class="card-title">Comprehensive Full Body</h3>
+            <p class="product-desc">64 Parameters: LFT, KFT, Thyroid, Lipid, CBC</p>
+            <div class="product-price-row">
+              <span class="product-price" style="color: #dc2626;">₹1,999/-</span>
+              <button class="btn btn-product-action" style="background: #dc2626;">Book Test</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: ABOUT DOCTOR & CLINIC -->
+  <section id="about" class="section-about">
+    <div class="container about-container">
+      <div class="about-text-col">
+        <div class="title-accent-badge">
+          <span class="dash-line" style="background: #0284c7;"></span>
+          <h2 class="section-main-title">About <span style="color: #0284c7;">Dr. Mohit Sharma</span></h2>
+        </div>
+        <p class="about-lead">
+          <strong>Dr. Mohit Sharma (MBBS, MD Medicine)</strong> brings over 15 years of dedicated medical experience providing compassionate, evidence-based clinical healthcare for patients across Jaora, Ratlam and surrounding regions.
+        </p>
+        <p class="about-detail">
+          Sanjeevani Clinic is equipped with sterile consultation chambers, an advanced in-house pathology lab, digital 12-lead ECG, nebulization unit, oxygen concentrators, and 24x7 emergency response services.
+        </p>
+
+        <!-- Feature Points -->
+        <div class="features-grid-about">
+          <div class="feature-box block-hover">
+            <div class="feature-icon" style="background: #e0f2fe; color: #0284c7;">👨‍⚕️</div>
+            <div>
+              <h4 class="feature-heading">Senior Physician</h4>
+              <p class="feature-text">MBBS, MD with 15+ years of clinical excellence</p>
+            </div>
+          </div>
+
+          <div class="feature-box block-hover">
+            <div class="feature-icon" style="background: #dcfce7; color: #16a34a;">🩺</div>
+            <div>
+              <h4 class="feature-heading">Accurate Diagnostics</h4>
+              <p class="feature-text">Digital ECG, blood testing and high accuracy lab reports</p>
+            </div>
+          </div>
+
+          <div class="feature-box block-hover">
+            <div class="feature-icon" style="background: #fee2e2; color: #dc2626;">🚑</div>
+            <div>
+              <h4 class="feature-heading">Emergency Support</h4>
+              <p class="feature-text">24/7 primary emergency care and immediate stabilization</p>
+            </div>
+          </div>
+
+          <div class="feature-box block-hover">
+            <div class="feature-icon" style="background: #fef3c7; color: #d97706;">💊</div>
+            <div>
+              <h4 class="feature-heading">Complete In-House Care</h4>
+              <p class="feature-text">Doctor consultation, lab tests and medicines under one roof</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Real Clinic Front Photo -->
+      <div class="about-visual-col">
+        <div class="real-shop-photo-card block-hover">
+          <div class="shop-photo-header">
+            <span>Sanjeevani Healthcare Center Premises</span>
+            <span class="live-pill" style="background: #0284c7;">Main Jaora Road</span>
+          </div>
+          <div class="shop-front-img-wrap">
+            <img src="assets/clinic_front.jpg" alt="Sanjeevani Clinic Center - Jaora" class="shop-front-img" loading="lazy">
+            <div class="shop-img-caption">
+              📍 Clean, Air-Conditioned &amp; Sterile Clinical Environment
+            </div>
+          </div>
+          <div class="shop-photo-footer" style="color: #0284c7;">
+            ⏰ OPD Timings: Mon - Sat: 9:00 AM - 2:00 PM &bull; 5:00 PM - 9:00 PM (Sun: 9:00 AM - 1:00 PM)
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: CONTACT & BOOK APPOINTMENT -->
+  <section id="contact" class="section-contact">
+    <div class="container">
+      <div class="section-title-wrap text-center">
+        <div class="title-accent-badge">
+          <span class="dash-line" style="background: #0284c7;"></span>
+          <h2 class="section-main-title">Book an <span style="color: #0284c7;">Appointment Today</span></h2>
+          <span class="dash-line" style="background: #0284c7;"></span>
+        </div>
+        <p class="section-subtitle">Visit Sanjeevani Clinic or Contact Directly for Fast Consultation</p>
+      </div>
+
+      <div class="contact-card-wrap">
+        <div class="contact-details-box">
+          <h3 class="contact-box-title">Doctor Consultation &amp; Visit Details</h3>
+
+          <div class="contact-info-list">
+            <div class="contact-item">
+              <span class="contact-item-icon">📍</span>
+              <div>
+                <strong>Clinic Address:</strong>
+                <p>Sanjeevani Healthcare Center, Main Road, Near Old Bus Stand, Jaora, Jila Ratlam (M.P.) - 457226</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-item-icon">📞</span>
+              <div>
+                <strong>Appointment Call:</strong>
+                <p><a href="tel:+919876543210" style="color: #0284c7; font-weight: 700;">+91 98765 43210</a> (Direct Reception)</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-item-icon">💬</span>
+              <div>
+                <strong>WhatsApp Appointment:</strong>
+                <p><a href="https://wa.me/919876543210" target="_blank" style="color: #16a34a; font-weight: 700;">Click to Message Dr. Mohit Sharma</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-item-icon">⏰</span>
+              <div>
+                <strong>Consultation Timings:</strong>
+                <p>Morning: 9:00 AM – 2:00 PM | Evening: 5:00 PM – 9:00 PM (Emergency 24x7)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-cta-buttons">
+            <a href="tel:+919876543210" class="btn btn-call-primary">
+              <span>Direct Call Doctor</span>
+            </a>
+            <a href="https://wa.me/919876543210?text=Namaste%20Doctor%20Sahab,%20mujhe%20appointment%20book%20karna%20hai." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-action">
+              <span>Book via WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="main-footer">
+    <div class="container footer-content-grid">
+      <div class="footer-col-brand">
+        <div class="brand-logo footer-logo">
+          <div class="logo-icon-box" style="background: linear-gradient(135deg, #0284c7, #0f766e);">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M2 12h20"/></svg>
+            <span class="logo-badge-b">+</span>
+          </div>
+          <div class="logo-text-group">
+            <span class="brand-title" style="color: #38bdf8;">Sanjeevani</span>
+            <span class="brand-subtitle" style="color: #94a3b8;">Clinic &amp; Healthcare Center</span>
+          </div>
+        </div>
+        <p class="footer-tagline">"आपकी सेहत, हमारा समर्पण"</p>
+        <p class="footer-mission-sub">
+          Providing high-quality, trustworthy and affordable medical consultation, child care, diagnostics &amp; emergency relief to our community.
+        </p>
+      </div>
+
+      <div class="footer-col-links">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Treatments &amp; Services</a></li>
+          <li><a href="#facilities">Lab Test Packages</a></li>
+          <li><a href="#about">About Dr. Mohit Sharma</a></li>
+          <li><a href="#contact">Book Appointment</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col-services">
+        <h4 class="footer-heading">Key Treatments</h4>
+        <ul class="footer-links">
+          <li><a href="#services">General Physician</a></li>
+          <li><a href="#services">Child Healthcare</a></li>
+          <li><a href="#services">Heart &amp; Blood Pressure</a></li>
+          <li><a href="#services">Diabetes &amp; Sugar Care</a></li>
+          <li><a href="#services">12-Lead Digital ECG</a></li>
+          <li><a href="#services">Emergency &amp; Day Care</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col-contact">
+        <h4 class="footer-heading">Emergency &amp; Location</h4>
+        <p style="font-size: 0.88rem; color: #cbd5e1; margin-bottom: 0.75rem;">
+          📍 Main Road, Near Old Bus Stand, Jaora, Jila Ratlam (M.P.)
+        </p>
+        <p style="font-size: 0.88rem; color: #38bdf8; font-weight: 700; margin-bottom: 1rem;">
+          📞 Helpline: +91 98765 43210
+        </p>
+      </div>
+    </div>
+
+    <!-- Copyright Bottom Line -->
+    <div class="footer-bottom-line">
+      <div class="container footer-subtext-row">
+        <span>&copy; 2026 Sanjeevani Clinic &amp; Healthcare. All Rights Reserved.</span>
+        <span>Dr. Mohit Sharma (MBBS, MD) | Jaora, Ratlam (MP)</span>
+      </div>
+    </div>
+
+    <!-- Creator Promotion Strip (Mohit P Jain) - Permanent Mohit Footer -->
+    <div class="creator-promo-strip">
+      <div class="container creator-promo-container">
+        <div class="creator-left">
+          <span class="creator-badge">⚡ Professional Web Developer</span>
+          <p class="creator-tagline">
+            Website Designed by <strong class="creator-name">Mohit P Jain</strong> &bull; 
+            <a href="tel:+916263879076" class="creator-phone">📞 +91 62638 79076</a>
+          </p>
+        </div>
+        <div class="creator-right">
+          <a href="https://wa.me/916263879076?text=Namaste%20Mohit%20Ji,%20mujhe%20apne%20clinic/business%20ke%20liye%20aisi%20hi%20shandar%20website%20banwani%20hai.%20Kripya%20details%20aur%20charges%20batayein." target="_blank" rel="noopener noreferrer" class="btn-creator-action">
+            <span>✨ अपनी वेबसाइट बनाने के लिए क्लिक करें &bull; डिटेल भेजें</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Mobile WhatsApp Quick Button -->
+  <a href="https://wa.me/919876543210?text=Namaste%20Doctor%20Sahab,%20mujhe%20appointment%20chahiye." target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" title="Direct WhatsApp Doctor">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+    <span class="floating-tip">WhatsApp</span>
+  </a>
+
+  <!-- MODAL: Doctor Appointment / Consultation Booking -->
+  <div class="modal-backdrop" id="serviceModal">
+    <div class="modal-dialog">
+      <button class="modal-close" onclick="closeModal('serviceModal')">&times;</button>
+      <div class="modal-header">
+        <span class="modal-icon-badge" id="modalIcon">🩺</span>
+        <div>
+          <h3 class="modal-title" id="modalServiceName">Medical Consultation</h3>
+          <p class="modal-subtitle" id="modalServiceDesc">Sanjeevani Clinic &amp; Healthcare Center</p>
+        </div>
+      </div>
+      <div class="modal-body">
+        <form id="serviceInquiryForm" onsubmit="handleInquirySubmit(event)">
+          <div class="form-group">
+            <label for="custName">Patient Name (मरीज का नाम):</label>
+            <input type="text" id="custName" placeholder="Jaise: Rajesh Patidar" required>
+          </div>
+          <div class="form-group">
+            <label for="custPhone">Mobile Number:</label>
+            <input type="tel" id="custPhone" placeholder="10 digit mobile number" pattern="[0-9]{10}" required>
+          </div>
+          <div class="form-group">
+            <label for="custDetails">Problem / Symptoms (बीमारी / परेशानी):</label>
+            <textarea id="custDetails" rows="3" placeholder="Apni takleef yahan likhein (e.g. Bukhar, BP, Sugar ya checkup karwana hai)..."></textarea>
+          </div>
+          <div class="modal-action-buttons">
+            <button type="submit" class="btn btn-whatsapp-full">
+              <span>Send Appointment Request on WhatsApp</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+            </button>
+            <a href="tel:+919876543210" class="btn btn-outline-call">
+              Direct Emergency Call
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
